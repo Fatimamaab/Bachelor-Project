@@ -5,31 +5,29 @@ This project presents a real-time, interpretable feedback system for human physi
 Developed as part of a Bachelor's final project, the system aims to assist users in improving their push-up technique autonomously through visual and textual guidance.
 
 ### Features
+
 * Pose Estimation using MediaPipe Pose (33 keypoints per frame)
-* Feature Engineering:
-    Elbow Joint Angles
-    Posture Symmetry
-    Movement Velocity
+* Feature Engineering: Elbow Joint Angles, Posture Symmetry, and Movement Velocity.
 * Hybrid CNN-BiLSTM Model for push-up classification
 * Real-Time Frame-Level Feedback:
-    Detection of overextended or insufficiently bent elbows
-    Symmetry imbalance detection
-    Sudden/uncontrolled movement detection
-* Deployment-Ready Export:
-    Keras Model (.keras format)
-    TensorFlow Lite Model (.tflite format)
+        Detection of overextended or insufficiently bent elbows, 
+        Symmetry imbalance detection, and
+        Sudden/uncontrolled movement detection.
+* Deployment-Ready Export: Keras Model (.keras format) and TensorFlow Lite Model (.tflite format)
 * Real-World Validation on external YouTube exercise videos
 * Interactive Visualizations (pose skeletons and overlaid feedback)
 
 ### Project Structure
 
 * pushup-feedback-system:
-── pushup_feedback.py                      # Core feedback engine (pose analysis + classification + feedback)
-── run_feedback.py                         # Real-time feedback interface using webcam
+*     ── pushup_feedback.py                      # Core feedback engine (pose analysis + classification + feedback)
+      ── run_feedback.py                         # Real-time feedback interface using webcam
 * models:
-── pushup_cnn_lstm_model.keras             # Trained Keras model
-── pushup_cnn_lstm_model.tflite            # TFLite model for mobile deployment
+*     ── pushup_cnn_lstm_model.keras             # Trained Keras model
+      ── pushup_cnn_lstm_model.tflite            # TFLite model for mobile deployment
 * images                                   # Sample visualizations (pose skeletons, elbow angles, velocity)
+* notebooks:
+*     ── 
 * README.md                                # Project documentation
 * requirements.txt                         # Python dependencies
 
@@ -38,10 +36,10 @@ Developed as part of a Bachelor's final project, the system aims to assist users
       git clone https://github.com/your-username/pushup-feedback-system.git
       cd pushup-feedback-system
 
-2. Install the dependencies:
+3. Install the dependencies:
       pip install -r requirements.txt
 
-3. Run real-time feedback:
+4. Run real-time feedback:
       python run_feedback.py
 
 ### Requirements

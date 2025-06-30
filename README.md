@@ -27,7 +27,7 @@ Developed as part of a Bachelor's final project, the system aims to assist users
       ── pushup_cnn_lstm_model.tflite            # TFLite model for mobile deployment
 * images                                   # Sample visualizations (pose skeletons, elbow angles, velocity)
 * notebooks:
-*     ── 
+*     ── 3 Python Notebooks                # Programming Solution
 * README.md                                # Project documentation
 * requirements.txt                         # Python dependencies
 
